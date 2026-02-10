@@ -93,13 +93,11 @@ Jeśli prawo Zipfa jest spełnione, iloczyn `ranga × częstość` powinien być
 
 Aby sprawdzić liniowość rozkładu, wykonano wykres:
 
-\[
-\log(ranga) \; vs \; \log(częstość)
-\]
+`log(rank)` vs `log(freq)`
 
 Jeśli prawo Zipfa obowiązuje, punkty powinny układać się w linię prostą.
 
-![Wykres Zipfa](images/zipf_loglog.png)
+![Wykres Zipfa](project01/images/zipf_loglog.png)
 
 📌 **Wniosek:**  
 Rozkład wykazuje niemal liniową zależność w skali log-log, co potwierdza zgodność z prawem Zipfa.  
