@@ -117,7 +117,7 @@ To pokazuje silną nierównomierność rozkładu słownictwa — niewielka czę�
 
 ---
 
-# Rdzeń języka (Core Vocabulary)
+# Rdzeń języka
 
 Rdzeń języka został zdefiniowany jako:
 
