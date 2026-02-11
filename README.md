@@ -1,9 +1,9 @@
-# Przetwarzanie języka naruralnego
+# Przetwarzanie języka naturalnego
 
 
-# 📚 Analiza Prawa Zipfa w Korpusie Języka Angielskiego
+# Analiza Prawa Zipfa w Korpusie Języka Angielskiego
 
-# 📖 Opis projektu
+# Opis projektu
 
 Celem projektu było:
 
@@ -12,11 +12,11 @@ Celem projektu było:
 3. Sprawdzenie zgodności z prawem Zipfa
 4. Wyznaczenie:
    - pokrycia 90% tekstu
-   - rdzenia języka (core vocabulary)
+   - rdzenia języka
 
 ---
 
-# 🧹 Tokenizacja i przygotowanie danych
+# Tokenizacja i przygotowanie danych
 
 Teksty zostały:
 
@@ -25,20 +25,20 @@ Teksty zostały:
 - zachowano apostrofy wewnątrz słów (np. `it's`, `don't`) aby nie generować sztucznych tokenów takich jak s albo t
 - przekształcone do listy tokenów
 
-📊 **Rozmiar korpusu:**
+**Rozmiar korpusu:**
 
 - Liczba wszystkich tokenów: `164776`
 - Liczba unikalnych słów: `12201`
 
 ---
 
-# 📊 Tabela częstości i wynik Zipfa
+# Tabela częstości i wynik Zipfa
 
 Dla każdego słowa obliczono:
 
 - liczbę wystąpień
 - rangę
-- wartość `ranga × częstość` (test zgodności z Zipfem)
+- wartość `ranga × częstość` 
 
 ### Wynikowa tabela:
 
@@ -89,7 +89,7 @@ Jeśli prawo Zipfa jest spełnione, iloczyn `ranga × częstość` powinien być
 
 ---
 
-# 📈 Wykres log-log
+# Wykres log-log
 
 Aby sprawdzić liniowość rozkładu, wykonano wykres:
 
@@ -99,17 +99,17 @@ Jeśli prawo Zipfa obowiązuje, punkty powinny układać się w linię prostą.
 
 ![Wykres Zipfa](project01/images/zipf_loglog.png)
 
-📌 **Wniosek:**  
+**Wniosek:**  
 Rozkład wykazuje niemal liniową zależność w skali log-log, co potwierdza zgodność z prawem Zipfa.  
 Odchylenia widoczne są na krańcach przedziału co jest normalne dla analizy rzeczywistych korpusów językowych.
 
 ---
 
-# 🔢 90% Pokrycia Tekstu
+# 90% Pokrycia Tekstu
 
 Obliczono, ile najczęstszych słów odpowiada za 90% wszystkich wystąpień.
 
-📊 Wynik:
+Wynik:
 
 - `3194` najczęstszych słów pokrywa 90% tekstu.
 
@@ -117,11 +117,11 @@ To pokazuje silną nierównomierność rozkładu słownictwa — niewielka czę�
 
 ---
 
-# 🧩 Rdzeń języka (Core Vocabulary)
+# Rdzeń języka (Core Vocabulary)
 
 Rdzeń języka został zdefiniowany jako:
 
-> 20–50 słów o największej liczbie unikalnych sąsiadów (lewo + prawo).
+> 20–50 słów o największej liczbie unikalnych sąsiadów.
 
 Dla każdego słowa policzono:
 - liczbę różnych słów występujących przed nim
@@ -182,7 +182,7 @@ Dla każdego słowa policzono:
 |may | 311 |
 |they | 308 |
 
-📌 Charakterystyka rdzenia:
+Charakterystyka rdzenia:
 
 - dominują słowa funkcyjne (`the`, `and`, `of`,`a`, `to`, `in`)
 - występują także czasowniki ogólnego zastosowania (`is`, `was`, `have`)
@@ -190,30 +190,30 @@ Dla każdego słowa policzono:
 
 ---
 
-# 🧠 Interpretacja wyników
+# Interpretacja wyników
 
-## 1️⃣ Czy Prawo Zipfa działa?
+## 1️ Czy Prawo Zipfa działa?
 
 Tak — rozkład częstości wyraźnie wykazuje zależność odwrotnej proporcjonalności między rangą a częstością.
 
-## 2️⃣ Czy wykres log-log jest liniowy?
+## 2 Czy wykres log-log jest liniowy?
 
 W dużym zakresie — tak.  
 Widoczne są typowe odchylenia w ekstremach rozkładu.
 
-## 3️⃣ Co mówi 90% pokrycia?
+## 3 Co mówi 90% pokrycia?
 
 Stosunkowo niewielki zbiór słów wystarcza do pokrycia zdecydowanej większości tekstu.  
 Język jest silnie zoptymalizowany pod kątem efektywności komunikacyjnej.
 
-## 4️⃣ Czy istnieje rdzeń języka?
+## 4 Czy istnieje rdzeń języka?
 
 Tak.  
 Można wyodrębnić niewielką grupę słów o bardzo wysokiej centralności w grafie sąsiedztwa.
 
 ---
 
-# 🛠 Technologie
+# Technologie
 
 - Python
 - Jupyter Notebook
@@ -223,7 +223,7 @@ Można wyodrębnić niewielką grupę słów o bardzo wysokiej centralności w g
 
 ---
 
-# ✨ Autorzy
+# Autorzy
 
 Filip Duda, Mateusz Działowski
 
